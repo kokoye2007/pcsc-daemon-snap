@@ -78,8 +78,7 @@ layout:
 
 parts:
   pcscd:
-    source: https://salsa.debian.org/rousseau/PCSC.git
-    source-tag: 1.9.0
+    source: https://pcsclite.apdu.fr/files/pcsc-lite-1.9.4.tar.bz2
     plugin: autotools
     configflags:
       - -includedir=${prefix}/include
@@ -127,7 +126,7 @@ parts:
     stage-packages:
       - libusb-1.0-0
   ccid:
-    source: https://salsa.debian.org/rousseau/CCID.git
+    source: https://ccid.apdu.fr/files/ccid-1.4.36.tar.bz2
     plugin: autotools
     after: [ acsccid ]
     organize:
@@ -138,7 +137,7 @@ parts:
     stage-packages:
       - libusb-1.0-0
   pcsc-tools:
-    source: https://salsa.debian.org/rousseau/pcsc-tools.git
+    source: http://ludovic.rousseau.free.fr/softwares/pcsc-tools/pcsc-tools-1.5.8.tar.bz2
     plugin: autotools
     after: [ ccid ]
     organize:
