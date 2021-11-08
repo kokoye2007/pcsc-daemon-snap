@@ -1,4 +1,4 @@
-name: pcsc-daemon
+name: smartcardtest
 base: core18
 adopt-info: pcscd
 summary: Middleware to access a smart card using SCard API (PC/SC)
